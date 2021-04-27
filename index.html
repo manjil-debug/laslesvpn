@@ -3,19 +3,21 @@
 <head>
     <meta charsert="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (min-width: 701px)" href="stylesheet.css" />
-    <link rel="stylesheet" media="screen and (max-width: 700px)" href="mobile.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet"  href="reset.css" />
 </head>
 <body>
-<header>
-  <div class='container'>
-    <div class="logo">
-      <a href="#">
-        <img src="images/logo.svg">
-      </a>
-    </div>
-    <div class="nav"> 
-        <ul>
+ 
+  <header class="header justify">
+      <div class="container">
+        <div class="logo-wrapper">
+          <a href="#">
+            <img src="images/Logo.svg" alt="LaslesVPN logo">
+          </a>
+        </div>
+
+        <nav class="nav">
+          <ul>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
@@ -31,65 +33,70 @@
             <li class="nav-item">
               <a class="nav-link" href="#help">Help</a>
             </li>
-        </ul>
-    </div>
-    <div class="header-right">
+          </ul>
+        </nav>
+
+        <div class="header-right">
           <a class="sign-in-btn" href="#signin">Sign In</a>
-          <a class="sign-out-btn" href="#signup">Sign Up</a>
-    </div>
-  </div>
-</header>
-<section class="section1">
-  <div class="container">
-    <div class="left">
-      <h1 class="section-title">
-        Want anything to be <br>
-        easy with <span>LaslesVPN.</span>
-      </h1>
-      <p class="section-subtitle">
-        Provide a network for all your needs with ease and fun using
-        <span>LaslesVPN</span> discover interesting features from us.
-      </p>
-      <div class="left-btn">
-        <a class="start-button" href="#">Get Started</a>
+          <a class="btn btn--outlined btn--small btn--rounded-full font-500" href="#signup">Sign Up</a>
+        </div>
+
+        
       </div>
-    </div>
-    <div class="right">
-      <img src="images/illustration 1.svg" alt="illustration">
-    </div>
-  </div>
-</section>
-<section class="section2">
-  <div class="container">
-    <div>
-          <img src="images/location.svg" alt="location icon">
-          <div class="content">
-            <p><b>30+</b><br>
-            Locations</p>
+  </header>
+
+  <section class="hero justify">
+      <div class="container">
+        <div class="hero-left">
+          <h1 class="section-title">
+            Want anything to be <br>
+            easy with <span>LaslesVPN.</span>
+          </h1>
+          <p class="section-subtitle">
+            Provide a network for all your needs with ease and fun using
+            <span>LaslesVPN</span> discover interesting features from us.
+          </p>
+          <a class="btn btn-cta btn--large btn--rounded font-700" href="#">Get Started</a>
+        </div>
+
+        <div class="hero-right">
+          <img src="images/illustration 1.svg" alt="illustration">
+        </div>
+      </div>
+  </section>
+
+  <section id="about" class="quick-stats">
+      <div class="container">
+        <div>
+          <img src="images/Location.svg" alt="location icon">
+          <div>
+            <p><b>30+</b></p>
+            <p>Locations</p>
           </div>
-    </div>
-    <div>
-          <img src="images/server.svg" alt="location icon">
-          <div class="content">
-             <p><b>50+</b><br>
-            Servers</p>
+        </div>
+        <div>
+          <img src="images/Server.svg" alt="server icon">
+          <div>
+            <p><b>50+</b></p>
+            <p>Servers</p>
           </div>
-    </div>
-    <div>
-          <img src="images/user.svg" alt="location icon">
-          <div class="content">
-            <p><b>90+</b><br>
-            Users</p>
+        </div>
+        <div>
+          <img src="images/user.svg" alt="user icon">
+          <div>
+            <p><b>90+</b></p>
+            <p>Users</p>
           </div>
-    </div>
-  </div>
-</section>
-<section class="section3">
-  <div class="container">
-    <div class="left">
-      <img src="images/illustration 2.svg" alt="illustration">
-    </div>
-    <div class="right">
+        </div>
+      </div>
+  </section>
+
+  <section id="features" class="features">
+      <div class="container">
+        <div class="features-left">
+          <img src="images/illustration 2.svg" alt="illustration">
+        </div>
+        <div class="features-right">
           <h2 class="section-title">
             We Provide Many <br>
             Features You Can Use
@@ -105,23 +112,23 @@
             <li>Supercharged VPN</li>
             <li>No specific time limits.</li>
           </ul>
-    </div>
-  </div>
-</section>
-<section class="section4">
-  <div class="container">
-    <div class="heading">
-      <h2 class="section-title">Choose Your Plan</h2>
-      <p class="section-subtitle">
+        </div>
+      </div>
+  </section>
+
+  <section id="pricing" class="plans">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Choose Your Plan</h2>
+          <p class="section-subtitle">
             Let's choose the package that is best for you and explore it happily
             and cheerfully.
-        </p>
-    </div>
-  </div>
-  <div class="container">
-      <div class="plan">
+          </p>
+        </div>
+        <div class="plans-wrapper">
+          <div class="plan">
             <div class="plan-image">
-              <img src="images/premium.svg" alt="Free plan">
+              <img src="images/Premium.svg" alt="Free plan">
             </div>
             <h3>Free Plan</h3>
             <div class="plan-features">
@@ -134,51 +141,55 @@
             </div>
             <div class="plan-bottom">
               <h4 class="plan-price">Free</h4>
-              <a class="plan-btn" href="#">Select</a>
+              <a class="btn btn--medium btn--outlined btn--rounded-full font-700" href="#">Select</a>
             </div>
+          </div>
+          <div class="plan">
+            <div class="plan-image">
+              <img src="images/Premium.svg" alt="Standard plan">
+            </div>
+            <h3>Standard Plan</h3>
+            <div class="plan-features">
+              <ul>
+                <li>Unlimited Bandwitch</li>
+                <li>Encrypted Connection</li>
+                <li>Yes Traffic Logs</li>
+                <li>Works on All Devices</li>
+                <li>Connect Anywhere</li>
+              </ul>
+            </div>
+            <div class="plan-bottom">
+              <h4 class="plan-price">$9 <span class="font-400">/ mo</span></h4>
+              <a class="btn btn--medium btn--outlined btn--rounded-full font-700" href="#">Select</a>
+            </div>
+          </div>
+          <div class="plan plan--recommended">
+            <div class="plan-image">
+              <img src="images/Premium.svg" alt="Premium plan">
+            </div>
+            <h3>Premium Plan</h3>
+            <div class="plan-features">
+              <ul>
+                <li>Unlimited Bandwitch</li>
+                <li>Encrypted Connection</li>
+                <li>Yes Traffic Logs</li>
+                <li>Works on All Devices</li>
+                <li>Connect Anywhere</li>
+                <li>Get New Features</li>
+              </ul>
+            </div>
+            <div class="plan-bottom">
+              <h4 class="plan-price">$12 <span class="font-400">/ mo</span></h4>
+              <a class="btn btn--medium btn--outlined btn--rounded-full font-700" href="#">Select</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="plan">
-            <div class="plan-image">
-              <img src="images/premium.svg" alt="Free plan">
-            </div>
-            <h3>Free Plan</h3>
-            <div class="plan-features">
-              <ul>
-                <li>Unlimited Bandwitch</li>
-                <li>Encrypted Connection</li>
-                <li>No Traffic Logs</li>
-                <li>Works on All Devices</li>
-              </ul>
-            </div>
-            <div class="plan-bottom">
-              <h4 class="plan-price">Free</h4>
-              <a class="plan-btn" href="#">Select</a>
-            </div>
-      </div>
-      <div class="plan">
-            <div class="plan-image">
-              <img src="images/premium.svg" alt="Free plan">
-            </div>
-            <h3>Free Plan</h3>
-            <div class="plan-features">
-              <ul>
-                <li>Unlimited Bandwitch</li>
-                <li>Encrypted Connection</li>
-                <li>No Traffic Logs</li>
-                <li>Works on All Devices</li>
-              </ul>
-            </div>
-            <div class="plan-bottom">
-              <h4 class="plan-price">Free</h4>
-              <a class="plan-btn" href="#">Select</a>
-            </div>
-    </div>
-  </div>
-  </div>
-</section>
-<section class="section5">
-  <div class="container" id="sec5-head">
-    <div class="section-header">
+  </section>
+
+  <section class="locations">
+      <div class="container">
+        <div class="section-header">
           <h2 class="section-title">
             Huge Global Network of Fast VPN
           </h2>
@@ -187,53 +198,51 @@
             See LaslesVPN everywhere to make it easier for you when you move
             locations.
           </p>
-        </div>  
-  </div>
-  <div class="container">
-    <div class="locations-map-wrapper">
-          <img src="images/huge global.svg" alt="Locations Map">
         </div>
-  </div>
-  <div class="container" id="sponsored">
-          <div class="sponsor" id="s1">
+
+        <div class="locations-map-wrapper">
+          <img src="images/Huge Global.svg" alt="Locations Map">
+        </div>
+
+        <div class="sponsored">
+          <div class="sponsor">
             <img src="images/netflix.svg" alt="Netflix logo">
           </div>
-          <div class="sponsor" id="s2">
+          <div class="sponsor">
             <img src="images/reddit.svg" alt="Reddit logo">
           </div>
-          <div class="sponsor" id="s3">
+          <div class="sponsor">
             <img src="images/amazon.svg" alt="Amazon logo">
           </div>
-          <div class="sponsor" id="s4">
+          <div class="sponsor">
             <img src="images/discord.svg" alt="Discord logo">
           </div>
-          <div class="sponsor" id="s5">
+          <div class="sponsor">
             <img src="images/spotify.svg" alt="Spotify logo">
+          </div>
         </div>
-  </div>
-</section>
-<section class="section6">
-  <div class"container">
-      
-  </div>
-</section>
-<div class="container" id="section7">
-  <div class="subscribe">
-        <div class="subscribe-left">
-          <h2 class="section-title font-500">
-            Subscribe Now for Get Special Features!
-          </h2>
-          <p>Let's subscribe with us and find the fun.</p>
-        </div>
-        <div class="subscribe-right">
-          <a class="sub-btn" href="#">Subscribe Now</a>
-        </div>
-  </div>
-</div>
+      </div>
+  </section>
 
-<footer>
-  <div class="container">
-    <div class="f-1">
+
+  <div id="help" class="container">
+      <div class="subscribe">
+            <div class="subscribe-left">
+                <h2 class="section-title font-500">
+                    Subscribe Now for Get Special Features!
+                </h2>
+                <p>Let's subscribe with us and find the fun.</p>
+            </div>
+
+            <div class="subscribe-right">
+                <a class="btn btn-cta btn--large btn--rounded" href="#">Subscribe Now</a>
+            </div>
+      </div>
+  </div>
+
+  <footer class="footer">
+      <div class="container">
+        <div>
           <div class="footer-logo">
             <a href="#"><img src="images/logo.svg" alt="logo"></a>
           </div>
@@ -244,19 +253,20 @@
 
           <div class="social-icons">
             <a class="social-icon" href="https://www.facebook.com/" target="_blank">
-              <img src="images/facebook.svg" alt="">
+              <img src="images/Facebook.svg" alt="">
             </a>
             <a class="social-icon" href="https://twitter.com/" target="_blank">
-              <img src="images/twitter.svg" alt="">
+              <img src="images/Twitter.svg" alt="">
             </a>
             <a class="social-icon" href="https://www.instagram.com/" target="_blank">
-              <img src="images/instagram.svg" alt="">
+              <img src="images/Instagram.svg" alt="">
             </a>
           </div>
 
           <p>© 2020 LaslesVPN</p>
-    </div>
-    <div>
+        </div>
+
+        <div>
           <h4 class="font-500">Product</h4>
           <ul>
             <li>
@@ -278,8 +288,9 @@
               <a href="#">Blog</a>
             </li>
           </ul>
-    </div>
-    <div>
+        </div>
+
+        <div>
           <h4 class="font-500">Engage</h4>
 
           <ul>
@@ -302,8 +313,9 @@
               <a href="#">Terms of Service</a>
             </li>
           </ul>
-    </div>
-    <div>
+        </div>
+
+        <div>
           <h4 class="font-500">Earn Money</h4>
 
           <ul>
@@ -314,10 +326,10 @@
               <a href="#">Become Partner</a>
             </li>
           </ul>
-    </div>
-  </div>
-</footer>
-</body>
+        </div>
+      </div>
+  </footer>
+  
 
 </body>
 </html>
